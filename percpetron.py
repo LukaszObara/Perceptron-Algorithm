@@ -76,5 +76,3 @@ if __name__ == '__main__':
 				(np.array([1, 1, 1]), np.array([0]))] 
 	test = Perceptron(xor_gate)
 	print(test.train())
-
-	pass
