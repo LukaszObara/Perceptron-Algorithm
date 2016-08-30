@@ -1,2 +1,4 @@
 # Perceptron-Algorithm
-Simple perceptron algorithm 
+Simple perceptron algorithm used in supervised learning of binary classifiers. More information can be found 
+
+https://en.wikipedia.org/wiki/Perceptron
