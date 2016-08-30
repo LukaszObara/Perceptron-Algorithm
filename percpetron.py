@@ -1,4 +1,4 @@
-'''perceptron.py'''
+'''Perceptron.py'''
 
 #### Libraries ####
 # Third Party Libraries 
