@@ -45,29 +45,13 @@ if __name__ == '__main__':
 	# that the data is arranged as a list containg a 2-tuple of arrays,
 	# that is [(np.array(), np.array()), (np.array(), np.array()), ...]
 
-	# and_gate = [(np.array([0, 0, 1]), np.array([0])), 
-	# 			(np.array([0, 1, 1]), np.array([0])), 
-	# 			(np.array([1, 0, 1]), np.array([0])),
-	# 			(np.array([1, 1, 1]), np.array([1]))]
+	or_gate = [(np.array([0, 0, 1]), np.array([0])), 
+			   (np.array([0, 1, 1]), np.array([1])), 
+			   (np.array([1, 0, 1]), np.array([1])),
+			   (np.array([1, 1, 1]), np.array([1]))]
 
-	# test = Perceptron(and_gate)
-	# print(test.train())
-
-	# or_gate = [(np.array([0, 0, 1]), np.array([0])), 
-	# 		   (np.array([0, 1, 1]), np.array([1])), 
-	# 		   (np.array([1, 0, 1]), np.array([1])),
-	# 		   (np.array([1, 1, 1]), np.array([1]))]
-
-	# test = Perceptron(or_gate)
-	# print(test.train())
-
-	# nand_gate = [(np.array([0, 0, 1]), np.array([1])), 
-	# 			 (np.array([0, 1, 1]), np.array([1])), 
-	# 			 (np.array([1, 0, 1]), np.array([1])), 
-	# 			 (np.array([1, 1, 1]), np.array([0]))]  
-
-	# test = Perceptron(nand_gate)
-	# print(test.train())
+	test = Perceptron(or_gate)
+	print(test.train())
 
 	# Example created to show that the xor_gate will not converge
 	xor_gate = [(np.array([0, 0, 1]), np.array([0])), 
