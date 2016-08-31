@@ -4,7 +4,7 @@
 # Third Party Libraries 
 import numpy as np
 
-__version__ = "1"
+__version__ = "1.1"
 __author__ = "Lukasz Obara"
 
 class Perceptron(object):
@@ -41,22 +41,18 @@ class Perceptron(object):
 		return self.weights
 
 if __name__ == '__main__':
-	# The data is structured similarly to the MNIST data set, noting 
-	# that the data is arranged as a list containg a 2-tuple of arrays,
-	# that is [(np.array(), np.array()), (np.array(), np.array()), ...]
+	# location = 'C:\\Users\\Lukasz Obara\\OneDrive\\Documents\\' \
+	#				+'Test Files\\gates.csv'
 
-	or_gate = [(np.array([0, 0, 1]), np.array([0])), 
-			   (np.array([0, 1, 1]), np.array([1])), 
-			   (np.array([1, 0, 1]), np.array([1])),
-			   (np.array([1, 1, 1]), np.array([1]))]
+	# data = np.genfromtxt(location, delimiter=',')
+	# all_gates = []
 
-	test = Perceptron(or_gate)
-	print(test.train())
+	# for i in data:
+	# 	temp = np.append(i[:-1], 1)
+	# 	foo = (np.array(temp, dtype=int), np.array([i[-1]], dtype=int))
+	# 	all_gates.append(foo)
 
-	# Example created to show that the xor_gate will not converge
-	xor_gate = [(np.array([0, 0, 1]), np.array([0])), 
-				(np.array([0, 1, 1]), np.array([1])), 
-				(np.array([1, 0, 1]), np.array([1])), 
-				(np.array([1, 1, 1]), np.array([0]))] 
-	test = Perceptron(xor_gate)
-	print(test.train())
+	# gates = [all_gates[i:i+4] for i in range(0, len(all_gates), 4)]
+	# test = Perceptron(gates[0][0:4])
+	# print(test.train())
+	pass
