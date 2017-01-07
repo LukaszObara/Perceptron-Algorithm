@@ -41,8 +41,7 @@ class Perceptron(object):
 		return self.weights
 
 if __name__ == '__main__':
-	# location = 'C:\\Users\\Lukasz Obara\\OneDrive\\Documents\\' \
-	#				+'Test Files\\gates.csv'
+	# location = 'C:\...\\Test Files\\gates.csv'
 
 	# data = np.genfromtxt(location, delimiter=',')
 	# all_gates = []
